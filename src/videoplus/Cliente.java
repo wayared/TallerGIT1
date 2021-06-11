@@ -40,5 +40,23 @@ public class Cliente {
 		}
 		return false;
 	}
+        
+        /**
+         * Simula la reproducción de los videos
+         * Los videos se muestran uno a uno en el orden que estan en la lista
+         * Al reproducirse un video este se quita de la lista
+         * Antes de reproducir el siguiente video se pregunta al usuario si quiere continuar
+         * al reproducirse un video se incrementa su numero de reproducciones
+         */
+        public void reproducir(){
+            String continuar="no";
+            do{
+                //obtenga el primer video de la lista - use el metodo get
+                //muestro el video
+                //incremento el numero de reproducciones
+                //remuevo el video de la lista - use el metodo remove
+                
+            }while(continuar.equals("si"));
+        }
 }
 
