@@ -6,7 +6,6 @@
 package videoplus;
 
 import java.util.ArrayList;
-
 /**
  *
  * @author Personal
@@ -52,10 +51,16 @@ public class Cliente {
             String continuar="no";
             do{
                 //obtenga el primer video de la lista - use el metodo get
-                //muestro el video
-                //incremento el numero de reproducciones
+                //muestro el video            
+                //incremento el numero de reproducciones  
                 //remuevo el video de la lista - use el metodo remove
-                
+                listaReproduccion = new ArrayList<Video>();
+                for (Video a: listaReproduccion){
+                    String b = a.getNombre();
+                    //metodo mostrarvideo(a);
+                    int inc_rep=a.getNumeroReproducciones()+1;
+                    listaReproduccion.remove(a);
+                }   
             }while(continuar.equals("si"));
         }
 }

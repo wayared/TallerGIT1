@@ -10,6 +10,7 @@ package videoplus;
  * @author Personal
  */
 public class Video {
+
     private String nombre;
     private int numeroReproducciones;
     

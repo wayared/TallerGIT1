@@ -12,9 +12,11 @@ import java.util.ArrayList;
  * @author rocio
  */
 public class VideoPlus {
+
+    private static Iterable<Video> listaReproduccion;
     
     public static void main(String[] args){
-        /*ArrayList<Video> videos = new ArrayList<Video>();
+        ArrayList<Video> videos = new ArrayList<Video>();
         videos.add(new Video("Cruela"));
         videos.add(new Video("Lazo While"));
         videos.add(new Video("El rey Leon"));
@@ -24,7 +26,16 @@ public class VideoPlus {
         
         Cliente c = new Cliente("jose");
         //agregue cinco peluclas a la lista de reproduccion
+        videos.add(new Video("Predestination"));
+        videos.add(new Video("1917"));
+        videos.add(new Video("The Joker"));
+        videos.add(new Video("End Game"));
+        videos.add(new Video("Kimetsu No Yaiba:Mugen Train"));
         
         //reproduzca las peliculas*/
+        for (Video b: listaReproduccion){
+            reproducir(b);
+          
+        }
     }
 }
